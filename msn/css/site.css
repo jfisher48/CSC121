@@ -1,0 +1,176 @@
+.row {
+    max-width: 72.5rem;
+}
+
+.top-bar{
+    height: 55px;
+    margin-bottom: 6px;
+}
+
+.top-bar img {
+    max-height: 40px;
+}
+
+.title {
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.hero-feature {
+    padding:0;
+}
+
+#news-sections {
+    background-color: #fff;
+    padding:0;
+    margin: 6px 0;
+}
+
+
+#news-sections li.tab-title a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left:6px;
+}
+
+#news a{
+    color: #1e1e1e;
+}
+
+#weather a{
+    color: #224f7b;
+}
+
+#entertainment a{
+    color: #ab1142;
+}
+
+#sports a{
+    color: #393965;
+}
+
+#money a{
+    color: #08893e;
+}
+
+#lifestyle a{
+    color: #624f87;
+}
+
+#health a{
+    color: #d24726;
+}
+
+#travel a{
+    color: #008198;
+}
+
+#news-sections li a:hover, #news-sections li.active a {
+    color: #fff;   
+}
+
+li#news a:hover, li#news.active a {
+    background-color: #1e1e1e;
+}
+    
+li#weather a:hover, li#weather.active a {    
+    background-color: #224f7b;
+}
+
+li#entertainment a:hover, li#entertainment.active a{
+    background-color: #ab1142;
+}
+
+li#sports a:hover, li#sports.active a{
+    background-color: #393965;
+}
+
+li#money a:hover, li#money.active a{
+    background-color: #08893e;
+}
+
+li#lifestyle a:hover, li#lifestyle.active a{
+    background-color: #624f87;
+}
+
+li#health a:hover, li#health.active a{
+    background-color: #d24726;
+}
+
+li#travel a:hover, li#travel.active a{
+    background-color: #008198;
+}
+
+:focus {
+    outline:none;
+}
+
+.tabs-content .content {
+    padding:0;
+}
+
+.tabs-content .content {
+    padding-top: 6px;
+    border-top: 3px solid;    
+    border-bottom: 3px solid;
+}
+
+.tabs-content .content.news {
+    border-color: #1e1e1e;
+}
+
+.tabs-content .content.weather {
+    border-color: #224f7b;
+}
+
+.row.collapse .columns img {
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+
+.row.collapse.tile .columns {
+    margin-left: 6px;
+    max-width: 287px;
+    height:82px;    
+    margin-bottom: 6px;
+}
+
+.row.collapse.tile .columns:nth-child(3), .row.collapse.tile .columns:last-child{
+    max-width:284px;
+}
+
+.row.collapse.tile .columns:first-child{
+    margin-left:0;
+}
+
+.news .row.collapse.tile .columns {
+    background-color: #1e1e1e;
+}
+
+.entertainment .row.collapse.tile .columns {
+    background-color: #ab1142;
+}
+
+.tile h6 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#apps {
+    position: absolute;
+    top:200px;
+    left:200px;
+}
+
+#apps li{
+    list-style: none;
+    margin-bottom: 6px;
+}
+
