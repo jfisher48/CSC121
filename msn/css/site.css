@@ -215,10 +215,19 @@ li#travel a:hover, li#travel.active a{
     border-color: #cc6666;
 }
 
+.hero-feature h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0px;
+    line-height: 28px;
+}
+
 .content .image h3 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
+    padding: 0 10px;
     position: absolute;
     bottom: 0px;
     line-height: 28px;
@@ -227,7 +236,7 @@ li#travel a:hover, li#travel.active a{
 .content .image h5 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
+    padding: 0 10px;
     position: absolute;
     bottom: 0px;
     line-height: 22px;
@@ -236,7 +245,7 @@ li#travel a:hover, li#travel.active a{
 .tile h6 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 10px;
+    padding: 0 10px;
     position: absolute;
     bottom: 0px;
 }
