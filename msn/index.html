@@ -11,16 +11,35 @@
   </head>
   <body>
         <div class="page-wrap">
-            <header class="top-bar">        
-                <h1 class="title">
-                    <a href="#"><img src="img/msn_white.png" alt="MSN Logo"></a>
-                </h1>        
-            </header>
+            <div class="fixed contain-to-grid">
+                <header class="top-bar">        
+                    <!--<div class="logo">
+                        <a href="#"><img src="img/msn_white.png" alt="MSN Logo"></a>
+                    </div>-->
+                    <section class="top-bar-section">
+                        <div class="logo left">
+                            <a href="#"><img src="img/msn_white.png" alt="MSN Logo"></a>
+                        </div>
+                        <ul class="center search-bar">
+                            <li class="has-form">
+                                <div class="row collapse">
+                                    <div class="large-10 columns">
+                                        <input type="text" placeholder="Search News">
+                                    </div>
+                                    <div class="large-2 columns">
+                                        <a href="#" class="button expand"><img src="img/mag-glass.png" width="30" height="30" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>        
+                </header>
+            </div>
             <div class="row">
                     <div class="large-12 columns hero-feature">
                         <img src="http://placehold.it/1160x460&text=Headline News Slider" alt="">
                     </div>
-                </div>
+            </div>
             <div class="row">
                     <nav id="news-sections" class="large-12 columns">
                         <ul class="tabs right" data-tab>                                        
@@ -33,112 +52,150 @@
                             <li id="travel" class="tab-title"><a href="">Travel</a></li>
                         </ul>                                
                     </nav>
-                </div>
-            <div class="tabs-content row collapse">
+            </div>
+            <div class="tabs-content row">
                     <div class="content active news large-12 columns" id="news-panel">
-                        <div class="row collapse">
-                            <div class="large-6 columns">
-                                <img src="http://placehold.it/1600x900&text=news item img" alt="" style="padding-left:0;">
+                        <div class="row">
+                            <div class="large-6 columns image first">
+                                <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
                             </div>
                             <div class="large-6 columns">
-                                <div class="row collapse">
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=news item img" alt="">
+                                <div class="row">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
                                     </div>
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=news item img" alt="">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="row collapse">
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=news item img" alt="">
+                                <div class="row">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
                                     </div>
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=news item img" alt="">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
                                     </div>
                                 </div>
                             </div>                    
                         </div>
-                        <div class="row collapse tile">
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>                        
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>A Very Long News Item Headline Text To Test Wrap</h6>
-                            </a>
+                        <div class="row tile">
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>                           
                         </div>
-                        <div class="row collapse tile">
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
+                        <div class="row tile">
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>News Item Headline</h6>
+                                </a>
+                            </div> 
                         </div>                
                     </div>            
                     <div class="content entertainment large-12 columns" id="entertainment-panel">
-                        <div class="row collapse">
-                            <div class="large-6 columns">
-                                <img src="http://placehold.it/1600x900&text=ent item img" alt="" style="padding-left:0;">
+                        <div class="row">
+                            <div class="large-6 columns image first">
+                                <a href="">
+                                    <img src="img/williams_susan.jpg" alt="Robin and Susan Williams">
+                                    <h3>Robin Williams' Widow: 'No one could have done anything more'</h3>
+                                </a>                                
                             </div>
                             <div class="large-6 columns">
-                                <div class="row collapse">
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=ent item img" alt="">
+                                <div class="row">
+                                    <div class="large-6 columns image">
+                                        <a href="">
+                                            <img src="img/glenn.jpg" alt="Steven Yeun as Glenn">
+                                            <h5>The Walking Dead's Opening Credits Had a Major Omission</h5>
+                                        </a>                                        
                                     </div>
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=ent item img" alt="">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="img/williams_susan.jpg" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="row collapse">
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=ent item img" alt="">
+                                <div class="row">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="img/williams_susan.jpg" alt=""></a>
                                     </div>
-                                    <div class="large-6 columns">
-                                        <img src="http://placehold.it/1600x900&text=ent item img" alt="">
+                                    <div class="large-6 columns image">
+                                        <a href=""><img src="img/williams_susan.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>                    
                         </div>
-                        <div class="row collapse tile">
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>                        
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>A Very Long Ent Item Headline Text To Test Wrap</h6>
-                            </a>
+                        <div class="row tile">
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Quentin Tarentino Breaks Silence Regarding Police Boycott</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Hispanic Groups to Protest Trump's SNL Episode at 30 Rock</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Tommy Overstreet, 1970s Country Hitmaker, Dies at 78</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Woman Who Cared for Bobbi Kristina Impersonated Nurse</h6>
+                                </a>
+                            </div>                           
                         </div>
-                        <div class="row collapse tile">
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>Ent Item Headline Text</h6>
-                            </a>
-                            <a href="" class="large-3 columns">
-                                <h6>News Item Headline Text</h6>
-                            </a>
+                        <div class="row tile">
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>J.K. Rowling Reveals She's Working on Another Children's Book</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Jon Stewart Inks Huge HBO Deal</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Honey Boo Boo Returning to TV</h6>
+                                </a>
+                            </div>
+                            <div class="large-3 columns">
+                                <a href="">
+                                    <h6>Adele's Rolling Stone Cover is Perfection</h6>
+                                </a>
+                            </div> 
                         </div>                
                     </div>            
                 </div><!--end of tabbed sections-->
