@@ -2,7 +2,8 @@
     outline: none;
 }
 
-.contain-to-grid .top-bar, .row {
+.contain-to-grid .top-bar,
+.row {
     max-width: 72.5rem;   
 }
 
@@ -19,7 +20,7 @@
     background-color: #1c1b1b;
 }
 
-.top-bar{
+.top-bar {
     height: 3.3475em;
     margin-bottom: 0.375em;
     text-align: center;
@@ -30,7 +31,7 @@
     max-height: 40px;
 }
 
-.logo a{
+.logo a {
     line-height: 50px;
     position: absolute;
     left: 5px;
@@ -57,7 +58,9 @@
     height:100%;
 }
 
-.top-bar .search-bar input, .top-bar .search-bar .button, .top-bar .search-bar button{
+.top-bar .search-bar input,
+.top-bar .search-bar .button,
+.top-bar .search-bar button {
     height: 100%;
     top:0;
 }
@@ -68,7 +71,8 @@
     color: #fff;
 }
 
-.top-bar .search-bar button, .top-bar .search-bar .button {
+.top-bar .search-bar button,
+.top-bar .search-bar .button {
     background-color: #ffb900;
 }
 
@@ -83,8 +87,7 @@
     margin: 0.375em 0;
 }
 
-
-#news-sections li.tab-title a{
+#top-navigation {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     background-color: #fff;
@@ -94,51 +97,66 @@
     margin-left: 0.375em;
 }
 
-#news a{
+
+#news-sections li.tab-title a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 0.375em;
+}
+
+#news a {
     color: #1e1e1e;
 }
 
-#weather a{
+#weather a {
     color: #224f7b;
 }
 
-#entertainment a{
+#entertainment a {
     color: #ab1142;
 }
 
-#sports a{
+#sports a {
     color: #393965;
 }
 
-#money a{
+#money a {
     color: #08893e;
 }
 
-#lifestyle a{
+#lifestyle a {
     color: #624f87;
 }
 
-#health a{
+#health a {
     color: #d24726;
 }
 
-#travel a{
+#travel a {
     color: #008198;
 }
 
-#news-sections li a:hover, #news-sections li.active a {
+#news-sections li a:hover,
+#news-sections li.active a {
     color: #fff;   
 }
 
-li#news a:hover, li#news.active a {
+li#news a:hover,
+li#news.active a {
     background-color: #1e1e1e;
 }
     
-li#weather a:hover, li#weather.active a {    
+li#weather a:hover,
+li#weather.active a {    
     background-color: #224f7b;
 }
 
-li#entertainment a:hover, li#entertainment.active a{
+li#entertainment a:hover,
+li#entertainment.active a {
     background-color: #ab1142;
 }
 
@@ -150,15 +168,18 @@ li#money a:hover, li#money.active a{
     background-color: #08893e;
 }
 
-li#lifestyle a:hover, li#lifestyle.active a{
+li#lifestyle a:hover,
+li#lifestyle.active a {
     background-color: #624f87;
 }
 
-li#health a:hover, li#health.active a{
+li#health a:hover,
+li#health.active a {
     background-color: #d24726;
 }
 
-li#travel a:hover, li#travel.active a{
+li#travel a:hover,
+li#travel.active a {
     background-color: #008198;
 }
 
@@ -193,7 +214,10 @@ li#travel a:hover, li#travel.active a{
     height: 100%;    
 }
 
-.row.tile .columns a:hover h6, .image a:hover h5, .image a:hover h3 {
+.hero-feature a:hover h2,
+.row.tile .columns a:hover h6,
+.image a:hover h5,
+.image a:hover h3 {
     text-decoration: underline;
 }
 
@@ -218,9 +242,9 @@ li#travel a:hover, li#travel.active a{
 .hero-feature h2 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    padding: 0 10px;
+    padding: 20px;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     line-height: 28px;
 }
 
