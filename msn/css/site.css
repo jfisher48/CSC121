@@ -2,9 +2,21 @@
     outline: none;
 }
 
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+}
+
 .contain-to-grid .top-bar,
 .row {
-    max-width: 72.5rem;   
+    max-width: 72.5em;   
 }
 
 .columns {
@@ -17,25 +29,25 @@
 }
 
 .fixed.contain-to-grid {
-    background-color: #1c1b1b;
+    background-color: #262626;
 }
 
 .top-bar {
     height: 3.3475em;
     margin-bottom: 0.375em;
     text-align: center;
-    background-color: #1c1b1b;
+    background-color: #262626;
 }
 
 .top-bar img {
-    max-height: 40px;
+    max-height: 2.5em;
 }
 
 .logo a {
-    line-height: 50px;
+    line-height: 3.125em;
     position: absolute;
-    left: 5px;
-    top: 1px;
+    left: .3125em;
+    top: .0625em;
 }
 
 .top-bar .center.search-bar {
@@ -45,31 +57,51 @@
 }
 
 .search-bar .has-form {
-    padding:0;
+    padding: 0;
     height: 100%;
 }
 
-.top-bar-section .search-bar .has-form .row{
+.top-bar-section .search-bar .has-form .row {
     width: 35em;
     height: 100%;
 }
 
 .search-bar .has-form div {
-    height:100%;
+    height: 100%;
 }
 
 .top-bar .search-bar input,
 .top-bar .search-bar .button,
 .top-bar .search-bar button {
     height: 100%;
-    top:0;
+    top: 0;
 }
 
 .top-bar .search-bar input {
-    background-color: #444;
+    background-color: #505050;
     border: none;
     color: #fff;
+    font-size: 1em;
 }
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #999999;    
+}
+
+:-moz-placeholder { /* older Firefox*/
+    font-size: 16px;
+    color: #999999;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+    font-size: 16px;
+    color: #999999; 
+} 
+:-ms-input-placeholder { 
+    font-size: 16px;
+    color: #999999; 
+}
+
 
 .top-bar .search-bar button,
 .top-bar .search-bar .button {
@@ -77,19 +109,20 @@
 }
 
 .hero-feature {
-    padding:0;
+    padding: 0;
     margin-top: 3.7225em;
+    line-height: 0;
 }
 
 #news-sections {
     background-color: #fff;
-    padding:0;
+    padding: 0;
     margin: 0.375em 0;
 }
 
 #top-navigation {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
     background-color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -100,7 +133,7 @@
 
 #news-sections li.tab-title a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
     background-color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -110,10 +143,6 @@
 
 #news a {
     color: #1e1e1e;
-}
-
-#weather a {
-    color: #224f7b;
 }
 
 #entertainment a {
@@ -185,7 +214,7 @@ li#travel.active a {
 
 .tabs-content .content {
     padding-top: 0.375em;
-    padding-bottom:0;
+    padding-bottom: 0;
     border-top: 3px solid;    
     border-bottom: 3px solid;
 }
@@ -198,9 +227,9 @@ li#travel.active a {
     border-color: #224f7b;
 }
 
-.row .columns.image {
+/*.row .columns.image {
     margin-bottom: 0.375em;
-}
+}*/
 
 .row.tile .columns {    
     height:82px;    
@@ -208,11 +237,13 @@ li#travel.active a {
 }
 
 
-.row.tile .columns a{
-    display:block;
+.row.tile .columns a {
+    display: block;
     width: 100%;
     height: 100%;    
 }
+
+/* Hover & Active States */
 
 .hero-feature a:hover h2,
 .row.tile .columns a:hover h6,
@@ -221,67 +252,162 @@ li#travel.active a {
     text-decoration: underline;
 }
 
-.news .row.tile .columns a {    
-    background-color: #1e1e1e;
-    border: 0.125em solid #1e1e1e;
+/* Easing border on hovered tiles */
+
+.hero-feature a,
+.content .image a,
+.tile a{
+  display: inline-block;
+  position: relative;
 }
 
-.news .row.tile .columns a:hover {
-    border-color: #999;
+.hero-feature a::after,
+.content .image a::after,
+.tile a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 0 rgba(255,255,255,.5);
+  transition: box-shadow .1s ease;
+}
+
+.hero-feature a:hover::after,
+.content .image a:hover::after,
+.tile a:hover::after {
+  box-shadow: inset 0 0 0 0.1875em rgba(255,255,255,.5);
+}
+
+.hero-feature a img,
+.content .image a img {
+  display: block;
+  position: relative;
+}
+
+/* Tile Colors */
+
+.news .row.tile .columns a {    
+    background-color: #1e1e1e;    
 }
 
 .entertainment .row.tile .columns a {
-    background-color: #ab1142;
-    border: 0.125em solid #ab1142;
+    background-color: #ab1142;    
 }
 
-.entertainment .row.tile .columns a:hover {
-    border-color: #cc6666;
+.sports .row.tile .columns a {
+    background-color: #393965;    
 }
+
+.money .row.tile .columns a {
+    background-color: #08893e;    
+}
+
+.lifestyle .row.tile .columns a {
+    background-color: #624f87;    
+}
+
+.health .row.tile .columns a {
+    background-color: #d24726;    
+}
+
+.travel .row.tile .columns a {
+    background-color: #008198;    
+}
+
 
 .hero-feature h2 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    padding: 20px;
+    color: #fff;    
+    padding: 1.25rem;
     position: absolute;
-    bottom: 20px;
-    line-height: 28px;
+    bottom: 1.25rem;
+    line-height: 1.75rem;
 }
 
 .content .image h3 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0 10px;
+    color: #fff;    
+    padding: 0 0.625rem;
     position: absolute;
-    bottom: 0px;
-    line-height: 28px;
+    bottom: 0;
+    line-height: 1.75rem;
 }
 
 .content .image h5 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0 10px;
+    color: #fff;    
+    padding: 0 0.625rem;
     position: absolute;
-    bottom: 0px;
-    line-height: 22px;
+    bottom: 0;
+    line-height: 1.375rem;
 }
 
 .tile h6 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0 10px;
+    color: #fff;    
+    padding: 0 0.625rem;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
+    line-height: 1.2rem;
 }
 
 #apps {
-    position: absolute;
-    top:200px;
-    left:200px;
+    position: fixed;
+    top: 30%;
+    left: 0;
 }
 
-#apps li{
+#apps ul {
+margin-left: 0.375em;
+}
+
+#apps li {
     list-style: none;
-    margin-bottom: 6px;
+    margin-bottom: 0.375em;
+}
+
+.app-tile {
+    display: block;   
+}
+
+.app-tile img {
+    width: 50px;
+}
+
+.app-tile span {
+    display: none;
+    color: #fff;
+}
+
+.app-tile:hover span {
+    padding-right: 0.675em;
+    display: inline;
+    height: 50px;
+}
+
+.app-tile.outlook:hover {    
+    background-color: #0078d6;
+}
+
+.app-tile.store:hover {    
+    background-color: #7fba00;
+}
+
+.app-tile.skype:hover {    
+    background-color: #00aff0;
+}
+
+.app-tile.office:hover {    
+    background-color: #eb3c00;
+}
+
+.app-tile.onenote:hover {    
+    background-color: #80397b;
+}
+
+.app-tile.onedrive:hover {    
+    background-color: #0053bc;
+}
+
+.app-tile.maps:hover {    
+    background-color: #8c0095;
 }
 
