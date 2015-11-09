@@ -328,8 +328,13 @@ li#travel.active a {
 .hero-feature a,
 .content .image a,
 .tile a{
-  display: inline-block;
-  position: relative;
+  display: block;
+  position: relative;    
+}
+
+.tile a,
+.content .image a {
+  margin-bottom: 0.375em;        
 }
 
 .hero-feature a::after,
