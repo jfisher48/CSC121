@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSN | Welcome</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />    
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -15,36 +17,68 @@
                 <header class="top-bar">                    
                     <section class="top-bar-section">
                         <div class="logo left">
-                            <a href="#"><img src="img/msn_white.png" alt="MSN Logo"></a>
-                        </div>
+                            <a href="index.html" class="left"><img src="img/msn_white.png" alt="MSN Logo"></a>
+                            <ul class="left">                            
+                                <li class="has-dropdown">
+                                    <a href="#">Headlines</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Entertainment</a></li>
+                                        <li><a href="#">Sports</a></li>
+                                        <li><a href="#">Money</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Health &amp; Fitness</a></li>
+                                        <li><a href="#">Travel</a></li>            
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>                       
                         <ul class="center search-bar">
                             <li class="has-form">
                                 <div class="row collapse">
                                     <div class="large-10 columns">
-                                        <input type="text" placeholder="Search News">
+                                        <input type="text" placeholder="search msn">
                                     </div>
                                     <div class="large-2 columns">
-                                        <a href="" class="button expand"><img src="img/mag-glass.png" width="30" height="30" alt=""></a>
+                                        <a href="#" class="button expand"><img src="img/mag-glass.png" width="25" height="25" alt="Magnifying Glass"></a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <div class="weather right">
+                            <a href="#">
+                                <p class="temp">53<span>&#x2109;</span></p>
+                                <p class="city">Mahomet, Illinois</p>
+                            </a>                            
+                        </div>
                     </section>        
                 </header>
             </div>
-            <div class="row">
-                    <div class="large-12 columns hero-feature">
-                        <a href="article.html">
-                            <img src="img/star-wars-the-force-awakens.jpg" alt="Star Wars The Force Awakens Wide Poster">
-                            <h2>Star Wars The Force Awakens News Headline</h2>
-                        </a>
-                    </div>
+            <div class="row slider">
+                <div class="large-12 columns hero-feature">
+                    <a href="article.html">
+                        <img src="img/star-wars-the-force-awakens.jpg" alt="Star Wars The Force Awakens Wide Poster">
+                        <h2>International Trailer for 'Star Wars The Force Awakens' Reveals New Footage and Plot Details</h2>
+                    </a>
+                </div>
+                <div class="large-12 columns hero-feature">
+                    <a href="#">
+                        <img src="img/russian-plane.jpg" alt="Russian Plane Wreckage">
+                        <h2>Putin Halts Flights to Russia as Analysts Report Downed Jet's Black Boxes Point to 'Attack'</h2>
+                    </a>
+                </div>
+                <div class="large-12 columns hero-feature">
+                    <a href="#">
+                        <img src="img/rubio.jpg" alt="Mark Rubio">
+                        <h2>What Marco Rubio Paid for With His Florida GOP Charge Card</h2>
+                    </a>
+                </div>
             </div>
             <div class="row">
                 <nav id="news-sections" class="large-12 columns">
                     <ul class="tabs right" data-tab>                                        
-                        <li id="news" class="tab-title"><a href="#news-panel">News</a></li>                    
-                        <li id="entertainment" class="tab-title active"><a href="#entertainment-panel">Entertainment</a></li>
+                        <li id="news" class="tab-title active"><a href="#news-panel">News</a></li>                    
+                        <li id="entertainment" class="tab-title"><a href="#entertainment-panel">Entertainment</a></li>
                         <li id="sports" class="tab-title"><a href="#sports-panel">Sports</a></li>
                         <li id="money" class="tab-title"><a href="#money-panel">Money</a></li>
                         <li id="lifestyle" class="tab-title"><a href="#lifestyle-panel">Lifestyle</a></li>
@@ -54,24 +88,24 @@
                 </nav>
             </div>
             <div class="tabs-content row">
-                <div class="content news large-12 columns" id="news-panel">
+                <div class="content news active large-12 columns" id="news-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href="">
-                                <img src="img/ashtray.jpg" alt="Ashtray">
-                                <h3>U.S. Smoking Hints at Rare Comeback After Long Decline</h3>
+                            <a href="#">
+                                <img src="img/supreme-court.jpg" alt="Supreme Court">
+                                <h3>Supreme Court Will Rule on Birth Control Mandate</h3>
                             </a>
                         </div>
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/lesin.jpg" alt="Mikhail Lesin">
                                         <h5>Ex-Putin aide found dead in US hotel</h5>
                                     </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/burial-vaults.jpg" alt="Burial Vaults">
                                         <h5>Forgotten Manhattan Tombs Begin to Yield Secrets</h5>
                                     </a>
@@ -79,13 +113,13 @@
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href="">
-                                        <img src="img/supreme-court.jpg" alt="Supreme Court Building">
-                                        <h5>Supreme Court Will Rule on Birth Control Mandate</h5>
+                                    <a href="#">
+                                        <img src="img/ashtray.jpg" alt="Ashtray">
+                                        <h5>U.S. Smoking Hints at Rare Comeback After Long Decline</h5>
                                     </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/taser.jpg" alt="Taser Demonstration">
                                         <h5>Border Agents Won’t Be Charged in Taser Death of Mexican</h5>
                                     </a>
@@ -95,53 +129,53 @@
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Texas State Judge Shot Outside Her Home</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                            <a href="#">
+                                <h6>Ben Carson's Past Faces Deeper Questions</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Search for Man Who Fell from Cruise Ship Suspended</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Why Hunting of Yellowstone Grizzlies Could Resume</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Sudan Crash Survivor Saved Stranger's Baby</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>How Could So Much Go Wrong in Brazil?</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Romania Fire Death Toll Reaches 41</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Noise Heard Before Russian Jet Broke Up</h6>
                             </a>
                         </div> 
                     </div>                
                 </div><!--end news section-->            
-                <div class="content entertainment active large-12 columns" id="entertainment-panel">
+                <div class="content entertainment large-12 columns" id="entertainment-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href="">
+                            <a href="#">
                                 <img src="img/williams_susan.jpg" alt="Robin and Susan Williams">
                                 <h3>Robin Williams' Widow: 'No one could have done anything more'</h3>
                             </a>                                
@@ -149,13 +183,13 @@
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/glenn.jpg" alt="Steven Yeun as Glenn">
                                         <h5>The Walking Dead's Opening Credits Had a Major Omission</h5>
                                     </a>                                        
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/thompson.jpg" alt="Fred Thompson">
                                         <h5>Stars Mourn Passing of Fred Thompson</h5>
                                     </a>
@@ -163,13 +197,13 @@
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/trump.jpg" alt="Jimmy Fallon & Donald Trump">
                                         <h5>Trump's 'SNL' Appearance Continues to Ignite Protests</h5>
                                     </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href="">
+                                    <a href="#">
                                         <img src="img/fonze.jpg" alt="Henry Winkler as The Fonze">
                                         <h5>Henry Winkler, TV's Fonzie Turns 70</h5>
                                     </a>
@@ -179,44 +213,44 @@
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Quentin Tarentino Breaks Silence Regarding Police Boycott</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Hispanic Groups to Protest Trump's SNL Episode at 30 Rock</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Tommy Overstreet, 1970s Country Hitmaker, Dies at 78</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Woman Who Cared for Bobbi Kristina Impersonated Nurse</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>J.K. Rowling Reveals She's Working on Another Children's Book</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Jon Stewart Inks Huge HBO Deal</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Honey Boo Boo Returning to TV</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
+                            <a href="#">
                                 <h6>Adele's Rolling Stone Cover is Perfection</h6>
                             </a>
                         </div> 
@@ -225,68 +259,83 @@
                 <div class="content sports large-12 columns" id="sports-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                            <a href="#">
+                                <img src="img/rousey.jpg" alt="Rhonda Rousey">
+                                <h3>When Rousey Was Just A Bartender, Not UFC Champion</h3>
+                            </a>
                         </div>
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/canderson.jpg" alt="Corey Anderson">
+                                        <h5>Corey Anderson replaces injured Lawlor at UFC Fight Night 77</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/kobe-carmelo.jpg" alt="Kobe vs. Carmelo">
+                                        <h5>Kobe prepares for his next, and perhaps his last trip to MSG</h5>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/harvey.jpg" alt="Matt Harvey">
+                                        <h5>Harvey just scratching surface of return to elite</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/pierre-paul.jpg" alt="Jason Pierre-Paul">
+                                        <h5>Giants announce Jason Pierre-Paul will play Sunday</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>                    
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>NFL says Heath's hit on Lockette illegal but doesn't levy fine</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                            <a href="#">
+                                <h6>Greinke opt-out could shift NL West landscape</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Harper called Papelbon to mend relationship</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Pacers welcome back 'old' Paul George</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Father-son Mississippi State players killed in car accident</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>After fine for obscene gesture, Oubre Jr. has best game as a pro</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>LSU-Alabama could determine Heisman Trophy</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Report: Colts Have Players Meeting About Pagano-Grigson Rift</h6>
                             </a>
                         </div> 
                     </div>                
@@ -294,68 +343,83 @@
                 <div class="content money large-12 columns" id="money-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                            <a href="#">
+                                <img src="img/family-time.jpg" alt="Family Time">
+                                <h3>Small business owners just say no to preserve family time</h3>
+                            </a>
                         </div>
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/takata.jpg" alt="Takata Corp Logo">
+                                        <h5>Nissan joins automakers dropping Takata air bag inflators</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/ford-assemblers.jpg" alt="Assembly Line">
+                                        <h5>UAW reaches deal with Ford; GM workers say yes with asterisk</h5>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/blackberry.jpg" alt="Blackberry Priv">
+                                        <h5>Did Blackberry just make a hit phone?</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/wells-fargo.jpg" alt="Wells Fargo">
+                                        <h5>Wells Fargo to pay $81.6 million to bankrupt US homeowners</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>                    
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Apple defeats U.S. class action lawsuit over bag searches</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                            <a href="#">
+                                <h6>Boeing eyes new partnerships, sees upward pressure on 737 output</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Toshiba sues three former CEOs over accounting scandal</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Fed rate hike 'makes sense,' says U.S. reserve bank president</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Stocks close mixed as job gains raise odds of a rate hike</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Amid Keystone and Exxon news, the oil industry has been put on notice</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Video game maker Activision launches film and TV studio</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Google reportedly wants to design its own Android chips</h6>
                             </a>
                         </div> 
                     </div>                
@@ -363,68 +427,83 @@
                 <div class="content lifestyle large-12 columns" id="lifestyle-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                            <a href="#">
+                                <img src="img/oops.jpg" alt="Embarrassing Moment">
+                                <h3>Six Embarrassing Things We All Do and Why</h3>
+                            </a>
                         </div>
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/kitchen-couple.jpg" alt="Teamwork in the Kitchen">
+                                        <h5>Study Says Men Who Help With Housework Have More Sex</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/sidewalk-couple.jpg" alt="Man and Woman on Sidewalk">
+                                        <h5>This One Detail Makes You (or Her) TWICE as Likely to Cheat</h5>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/raking-leaves.jpg" alt="Woman Raking Leaves">
+                                        <h5>7 Fall Lawn Care Tips to Do Right Now</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/couple.jpg" alt="Couple Having The Talk">
+                                        <h5>3 Conversations to Have Before You Get Engaged</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>                    
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>5 Ways to Deal When You’re Tempted to Cheat on Your Partner</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                            <a href="#">
+                                <h6>Courtship Rituals From Around the World</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>How our housing choices make adult friendships more difficult</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>8 Things I Learned from Living with a Woman I Wasn't Dating</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>How to Handle Your Facebook Friends' Political Posts</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>5 Ways Parenthood Will Change Your Marriage</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Apologizing by Text Is Different from Saying Sorry in Person</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>The (Supposed) Ideal Age to Get Married</h6>
                             </a>
                         </div> 
                     </div>                
@@ -432,193 +511,262 @@
                 <div class="content health large-12 columns" id="health-panel">
                     <div class="row">
                         <div class="large-6 columns image first">
-                            <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                            <a href="#">
+                                <img src="img/winter-runner.jpg" alt="Man Running in Cold Weather">
+                                <h3>Is Exercising in the Cold Bad for Your Body?</h3>
+                            </a>
                         </div>
                         <div class="large-6 columns">
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/biking-stairs.jpg" alt="Bicyclist on Stairs">
+                                        <h5>7 Things EMTs Wish You Knew about Bike Crashes</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/hula-hoopers.jpg" alt="Hula Hoopers">
+                                        <h5>Goofing Off to Get Healthy</h5>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/post-workout.jpg" alt="Post Workout Rest">
+                                        <h5>How Long Does It Take for Your Fitness to Backslide?</h5>
+                                    </a>
                                 </div>
                                 <div class="large-6 columns image">
-                                    <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
+                                    <a href="#">
+                                        <img src="img/rough-workout.jpg" alt="Rough Workout">
+                                        <h5>How Sick is Too Sick to Excercise?</h5>
+                                    </a>
                                 </div>
                             </div>
                         </div>                    
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Losing Yourself in Eminem's Music Boosts Athletic Performance</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                            <a href="#">
+                                <h6>10 Ways You Sabotage Your Health and Fitness Goals</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Many Americans May Experience 'Silent Heart Attacks'</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>The Best Bedtime for Kids Revealed</h6>
                             </a>
                         </div>                           
                     </div>
                     <div class="row tile">
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>Why Does Sleeping Too Much Make You Feel Even More Tired?</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>The Unexpected Thing That Happened When I Started Coloring</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>19 Ways to Eat Healthy on a Budget</h6>
                             </a>
                         </div>
                         <div class="large-3 columns">
-                            <a href="">
-                                <h6>News Item Headline</h6>
+                            <a href="#">
+                                <h6>The 10 Healthiest Nations on Earth</h6>
                             </a>
                         </div> 
                     </div>                
                 </div><!--end health panel-->
                 <div class="content travel large-12 columns" id="travel-panel">
                         <div class="row">
-                            <div class="large-6 columns image first">
-                                <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
-                            </div>
-                            <div class="large-6 columns">
-                                <div class="row">
-                                    <div class="large-6 columns image">
-                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
-                                    </div>
-                                    <div class="large-6 columns image">
-                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="large-6 columns image">
-                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
-                                    </div>
-                                    <div class="large-6 columns image">
-                                        <a href=""><img src="http://placehold.it/1600x900&text=news item img" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>                    
+                        <div class="large-6 columns image first">
+                            <a href="#">
+                                <img src="img/plane.jpg" alt="Plane on Tarmac">
+                                <h3>A New Era of ‘Ultra-Long-Haul’ Aviation</h3>
+                            </a>
                         </div>
+                        <div class="large-6 columns">
+                            <div class="row">
+                                <div class="large-6 columns image">
+                                    <a href="#">
+                                        <img src="img/european-street.jpg" alt="View of European Street">
+                                        <h5>The 5 Cheapest Ways to Fly to Europe</h5>
+                                    </a>
+                                </div>
+                                <div class="large-6 columns image">
+                                    <a href="#">
+                                        <img src="img/unaccompanied-minor.jpg" alt="Kid Waits in Terminal">
+                                        <h5>How to Pack the Perfect Carry-On for Your Family Vacation</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-6 columns image">
+                                    <a href="#">
+                                        <img src="img/layover.jpg" alt="Layover">
+                                        <h5>How to Make the Most of Your Layover</h5>
+                                    </a>
+                                </div>
+                                <div class="large-6 columns image">
+                                    <a href="#">
+                                        <img src="img/flight-attendant.jpg" alt="Flight Attendant">
+                                        <h5>How to NOT Piss Off a Flight Attendant</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
                         <div class="row tile">
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>Best and Worst Days to Travel This Holiday Season</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>Extremely Long News Item Headline to Test Wrap</h6>
+                                <a href="#">
+                                    <h6>The Best In-Flight Beauty Tips</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>How to Avoid Those Pesky Airline Change Fees</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>Cheap Holiday Travel: How Early Should You Book?</h6>
                                 </a>
                             </div>                           
                         </div>
                         <div class="row tile">
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>How to Get Free Airline Tickets for Your Travel Partner</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>What to See in Paris Right Now</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>This Thanksgiving Will Be Busiest for Air Travel in 8 Years</h6>
                                 </a>
                             </div>
                             <div class="large-3 columns">
-                                <a href="">
-                                    <h6>News Item Headline</h6>
+                                <a href="#">
+                                    <h6>Off the Grid Adventure Trips</h6>
                                 </a>
                             </div> 
                         </div>                
                     </div><!--end travel panel-->                 
-            </div><!--end of tabbed sections-->                
-        </div>
+            </div><!--end of tabbed sections-->
+            <footer>
+                <div class="row">
+                    <div class="large-8 columns">
+                        <ul class="left">
+                            <li><a href="#">&copy;2015 Microsoft</a></li>
+                        </ul>                    
+                    </div>
+                    <div class="large-4 columns">
+                        <nav class="footer-nav">
+                            <ul class="right">
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </nav>                        
+                    </div>
+                </div>
+            </footer>                
+        </div><!--end pagewrap-->
         <nav id="apps">
             <ul>
                 <li>
-                    <a href="" class="app-tile outlook">
+                    <a href="#" class="app-tile outlook">
                         <img src="img/outlook.png" alt="Outlook">
                         <span>Outlook.com</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile store">
+                    <a href="#" class="app-tile store">
                         <img src="img/ms-store.png" alt="Store">
                         <span>Store</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile skype">
+                    <a href="#" class="app-tile skype">
                         <img src="img/Skype-png.png" alt="Skype">
                         <span>Skype</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile office">
+                    <a href="#" class="app-tile office">
                         <img src="img/office.png" alt="MS Office">
                         <span>Office</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile onenote">
+                    <a href="#" class="app-tile onenote">
                         <img src="img/ms-onenote.png" alt="OneNote">
                         <span>OneNote</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile onedrive">
+                    <a href="#" class="app-tile onedrive">
                         <img src="img/one-drive.png" alt="OneDrive">
                         <span>OneDrive</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="app-tile maps">
+                    <a href="#" class="app-tile maps">
                         <img src="img/ms-maps.png" alt="Bing Maps">
                         <span>Bing Maps</span>
                     </a>
                 </li>
             </ul>
-        </nav>               
+        </nav>
+        <ul class="login right">
+                <li>
+                    <a href="#">sign in</a>
+                </li>
+        </ul>                
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script>
           $(document).foundation();
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    dots: true,                   
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            });
         </script>
   </body>
 </html>

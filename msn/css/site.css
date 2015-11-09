@@ -29,30 +29,67 @@ input {
 }
 
 .fixed.contain-to-grid {
-    background-color: #262626;
+    background-color: #262626;    
 }
 
 .top-bar {
-    height: 3.3475em;
+    height: 3em;
     margin-bottom: 0.375em;
     text-align: center;
-    background-color: #262626;
+    background-color: #262626;    
 }
 
 .top-bar img {
-    max-height: 2.5em;
+    max-height: 2.0em;
 }
 
-.logo a {
-    line-height: 3.125em;
+.logo {    
     position: absolute;
-    left: .3125em;
-    top: .0625em;
+    left: 0;
+}
+
+.top-bar-section .logo ul li a {
+    font-family : 'Segoe UI', 'Open Sans', sans-serif;
+    font-size: 26px;
+    text-transform: lowercase;
+    text-align: left;
+}
+
+.weather a {
+    position: absolute;
+    right: 0;
+    top: .1875em;
+    color: #fff;
+    text-align: right;    
+}
+
+.weather a p {
+    margin: 0;
+    line-height: 1.375rem;
+}
+
+.temp {
+    font-size: 1.5em;
+}
+
+.temp::before {    
+    background: url(../img/mostly-sunny-icon.png);
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 20px;
+    top: 2px;
+    z-index: 99;
+}
+
+.city {
+    font-size: .75em;
 }
 
 .top-bar .center.search-bar {
     display: inline-block;
-    height: 3.3475em !important;
+    height: 3em !important;
     background-color: #333;
 }
 
@@ -82,23 +119,24 @@ input {
     border: none;
     color: #fff;
     font-size: 1em;
+    border-bottom: 1px solid #505050;
 }
 
 ::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 1em;
     color: #999999;    
 }
 
 :-moz-placeholder { /* older Firefox*/
-    font-size: 16px;
+    font-size: 1em;
     color: #999999;
 }
 ::-moz-placeholder { /* Firefox 19+ */ 
-    font-size: 16px;
+    font-size: 1em;
     color: #999999; 
 } 
 :-ms-input-placeholder { 
-    font-size: 16px;
+    font-size: 1em;
     color: #999999; 
 }
 
@@ -106,11 +144,48 @@ input {
 .top-bar .search-bar button,
 .top-bar .search-bar .button {
     background-color: #ffb900;
+    padding-top: 0.85em;
+}
+
+.search-bar button img {
+    line-height: 3em;
+}
+.top-bar .search-bar .button:hover {
+    background-color: #ff9900;
+}
+
+.search-bar input:focus {
+    background-color: #fff;
+    color: #262626;
+}
+
+.login {
+    list-style: none;
+}
+
+.login a {
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    color: #b3b3b3;
+    z-index: 100;
+}
+
+.login a:hover {
+    color: #fff;
+}
+
+.slider,
+.hero-article {
+    margin-top: 3.375em;
+}
+
+.slick-dots {
+    margin: 0;    
 }
 
 .hero-feature {
-    padding: 0;
-    margin-top: 3.7225em;
+    padding: 0;    
     line-height: 0;
 }
 
@@ -132,7 +207,7 @@ input {
 
 
 #news-sections li.tab-title a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
     font-size: 0.875em;
     background-color: #fff;
     font-weight: 600;
@@ -227,10 +302,6 @@ li#travel.active a {
     border-color: #224f7b;
 }
 
-/*.row .columns.image {
-    margin-bottom: 0.375em;
-}*/
-
 .row.tile .columns {    
     height:82px;    
     margin-bottom: 0.375em;    
@@ -322,7 +393,7 @@ li#travel.active a {
     padding: 1.25rem;
     position: absolute;
     bottom: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 2.5rem;
 }
 
 .content .image h3 {
@@ -349,9 +420,43 @@ li#travel.active a {
     line-height: 1.2rem;
 }
 
+/* Footer */
+
+footer {
+    background-color: #262626;
+    height: 1.875em;    
+}
+
+footer ul {
+    list-style: none;
+    margin:0;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a{
+    padding: .6em;
+    text-decoration: none;
+    color: #b3b3b3;
+    white-space: nowrap;
+    font-family: 'Segoe UI Semi Light','Segoe UI Light','Segoe UI Web Light','Segoe UI','Segoe UI Web',Arial,Verdana,sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: .01em;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+/* Microsoft Apps */
+
 #apps {
     position: fixed;
-    top: 30%;
+    top: 5.5em;
     left: 0;
 }
 
@@ -409,5 +514,57 @@ margin-left: 0.375em;
 
 .app-tile.maps:hover {    
     background-color: #8c0095;
+}
+
+.article-content {
+    margin-top: 2em;
+}
+
+.article-content article {
+    padding-right: 1.875em;
+}
+
+.article-content aside {
+    padding-left: 1.875em;
+}
+
+article h2 {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+
+article p {
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
+    line-height: 1.7rem;
+}
+.byline {
+    margin-bottom: 1.5rem;
+}
+
+.byline p {
+    margin:0;
+    font-weight: bold;
+    line-height: 1.4rem;
+}
+
+iframe {
+    margin-bottom: 1.5rem;
+}
+
+aside ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+aside a h6 {
+    color: #008CBA;
+}
+
+aside a:hover h6{    
+    text-decoration:underline;
+    color: #007095;
 }
 
