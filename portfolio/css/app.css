@@ -1,0 +1,18 @@
+#work {
+    text-align:center;
+}
+
+#work .column {
+    position: relative;
+    margin-bottom: .75em;
+    padding-left: .375em;
+    padding-right: .375em;
+}
+
+#work h5 {    
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
