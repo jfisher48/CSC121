@@ -9,13 +9,19 @@
         <script src="https://use.typekit.net/ngs7khf.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
-    <body>        
-        <div class="title-bar hide-for-large">
+    <body>                
+        <div class="title-bar show-for-small-only">
             <div class="title-bar-right">
                 <button class="menu-icon" type="button" data-open="my-info"></button>        
             </div>
-        </div>
-        
+        </div>        
+        <nav class="top-bar hide-for-small-only">
+           <ul class="top-bar-right menu">
+               <li><a href="#">About</a></li>
+               <li><a href="#work">Work</a></li>
+               <li><a href="#contact">Contact</a></li>               
+           </ul>            
+        </nav>                
         <section id="about"><!--begin about section-->            
             <div class="row column">
                 <h1><span class="intro">the portfolio of</span><span class="name">JAY FISHER</span></h1>
@@ -98,7 +104,7 @@
                     <textarea></textarea>
                 </label>
                 <button class="button">Submit</a>
-            </div>
+            </div>            
         </section><!--end contact section-->        
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/foundation.min.js"></script>
