@@ -1,3 +1,53 @@
+h1,h2,h3,h4,h5,h6,p {
+    font-family: "jaf-bernino-sans-condensed", sans-serif;
+}
+
+#about {
+    background-image: url(../img/hero-image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:98%;
+    color: white;
+    text-align: center;
+}
+
+#about h1{
+    margin-top: 2.5em;
+}
+
+#about h1 span {
+    display: block;    
+    font-weight: 800;
+    line-height:1;
+}
+
+@media only screen and (max-width: 375px) {
+    span.intro {
+        font-size: .5em;
+    }
+    span.name {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 800px) {
+    span.intro {
+        font-size: 1.0em;
+    }
+    span.name {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    span.intro {
+        font-size: 1.5em;
+    }
+    span.name {
+        font-size: 3.5em;
+    }
+}
+
 #work {
     text-align:center;
 }
