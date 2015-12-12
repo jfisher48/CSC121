@@ -10,102 +10,119 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>                
-        <div class="title-bar show-for-small-only">
-            <div class="title-bar-right">
-                <button class="menu-icon" type="button" data-open="my-info"></button>        
+        <div id="page-container">
+            <div class="title-bar show-for-small-only">
+                <div class="title-bar-right">
+                    <button class="menu-icon" type="button" data-open=""></button>        
+                </div>
             </div>
-        </div>        
-        <nav class="top-bar hide-for-small-only">
-           <ul class="top-bar-right menu">
-               <li><a href="#">About</a></li>
-               <li><a href="#work">Work</a></li>
-               <li><a href="#contact">Contact</a></li>               
-           </ul>            
-        </nav>                
-        <section id="about"><!--begin about section-->            
-            <div class="row column">
-                <h1><span class="intro">the portfolio of</span><span class="name">JAY FISHER</span></h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+            <div data-sticky-container class="top-bar-container hide-for-small-only">
+                <div class="sticky" data-sticky style="width: 100%;" data-anchor="page-container" data-margin-top="0">        
+                    <div class="top-bar hide-for-small-only">
+                    <div class="row">
+                       <ul class="top-bar-right menu">
+                           <li><a href="#">About</a></li>
+                           <li><a href="#work">Work</a></li>
+                           <li><a href="#contact">Contact</a></li>               
+                       </ul>
+                       <ul class="top-bar-left menu">
+                           <li><h2>JF</h2></li>                           
+                       </ul>            
+                    </div>
+                    </div>
+                </div>
+            </div>          
+            <section id="about"><!--begin about section-->                         
+                <div class="row column">
+                    <h1><span class="intro">the portfolio of</span><span class="name">JAY FISHER</span></h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+                </div>
+            </section><!--end about section-->
+            <section id="work"><!--begin work section-->
+            <div class="heading">
+                <h2>Previous Work</h2>
+                <p class="lead">Here's a small selection of past projects</p>
             </div>
-        </section><!--end about section-->
-        <section id="work" class="row small-up-1 medium-up-3 large-up-4"><!--begin work section-->
-            <a href="project1.html" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="project2.html" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>
-            <a href="#" class="column">
-                <img src="http://placehold.it/300x300">
-                <h5>Project Title</h5>
-            </a>            
-        </section><!--end work section-->
-        <hr>
-        <section id="contact" class="row"><!--begin contact section-->
-            <div class="medium-6 columns">
-                <h3>Contact Me</h3>
-                <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
-                <ul class="menu">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Email</a></li>
-                </ul>
-            </div>
-            <div class="medium-6 columns">
-                <label>First Name
-                    <input type="text">
-                </label>
-                <label>Last Name
-                    <input type="text">
-                </label>
-                <label>Email
-                    <input type="text">
-                </label>
-                <label>
-                Message
-                    <textarea></textarea>
-                </label>
-                <button class="button">Submit</a>
+            <div class="row small-up-1 medium-up-3 large-up-4"><!--begin work section-->
+                <a href="project1.html" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="project2.html" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
+                <a href="#" class="column">
+                    <img src="http://placehold.it/300x300">
+                    <h5>Project Title</h5>
+                </a>
             </div>            
-        </section><!--end contact section-->        
+            </section><!--end work section-->
+            <hr>
+            <section id="contact" class="row"><!--begin contact section-->
+                <div class="medium-6 columns">
+                    <h3>Contact Me</h3>
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+                    <ul class="menu">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </div>
+                <div class="medium-6 columns">
+                    <label>First Name
+                        <input type="text">
+                    </label>
+                    <label>Last Name
+                        <input type="text">
+                    </label>
+                    <label>Email
+                        <input type="text">
+                    </label>
+                    <label>
+                    Message
+                        <textarea></textarea>
+                    </label>
+                    <button class="button">Submit</a>
+                </div>            
+            </section><!--end contact section-->
+        </div>        
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/foundation.min.js"></script>
         <script>
